@@ -1,7 +1,7 @@
 const panels = [
   "images/panel1.jpg",
-  "images/panel2.jpg",
-  "images/panel3.jpg"
+  //"images/panel2.jpg",
+  //"images/panel3.jpg"
   // Add more as needed
 ];
 
