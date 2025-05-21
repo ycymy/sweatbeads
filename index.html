@@ -1,25 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Manga Sweat Bead Counter</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Manga Sweat Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        details {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <h1>💦 Manga Sweat Bead Counter 💦</h1>
+    <h1>Manga Sweat Tracker</h1>
 
-  <div id="image-container">
-    <img id="manga-panel" src="images/panel1.jpg" alt="Manga Panel">
-    <p>Beads of sweat counted for this panel:</p>
-    <h2 id="panel-counter">0</h2>
-  </div>
+    <!-- Example Manga -->
+    <details open>
+        <summary>One Punch Man</summary>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chapter</th>
+                    <th>Beads of Sweat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
 
-  <div id="controls">
-    <button onclick="incrementBeads()">💧 Add Sweat Bead</button>
-    <button onclick="resetBeads()">Reset</button>
-    <button onclick="nextImage()">➡️ Next Panel</button>
-  </div>
+    <details>
+        <summary>Attack on Titan</summary>
+        <table>
+            <thead>
+                <tr>
+                    <th>Chapter</th>
+                    <th>Beads of Sweat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
 
-  <script src="script.js"></script>
+    <!-- You can add more manga sections below -->
 </body>
 </html>
