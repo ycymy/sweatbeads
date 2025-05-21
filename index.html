@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sweat Bead Counter</title>
+  <title>Manga Sweat Bead Counter</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>💦 Manga Sweat Bead Counter 💦</h1>
-  <p>Total Sweat Beads Counted:</p>
-  <h2 id="counter">0</h2>
-  <button onclick="incrementCounter()">Add Bead</button>
-  <button onclick="resetCounter()">Reset</button>
+
+  <div id="image-container">
+    <img id="manga-panel" src="images/panel1.jpg" alt="Manga Panel">
+    <p>Beads of sweat counted for this panel:</p>
+    <h2 id="panel-counter">0</h2>
+  </div>
+
+  <div id="controls">
+    <button onclick="incrementBeads()">💧 Add Sweat Bead</button>
+    <button onclick="resetBeads()">Reset</button>
+    <button onclick="nextImage()">➡️ Next Panel</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
